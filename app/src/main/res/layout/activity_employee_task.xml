@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/backarrow"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EmployeeTask"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:background="#f2f2f2">
+
+        <LinearLayout
+            android:id="@+id/pending"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/buttondesign"
+            android:layout_weight="1">
+
+
+
+            <TextView
+                android:id="@+id/text_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pending"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/completed"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <TextView
+
+                android:id="@+id/text_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Completed"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:smoothScrollbar="true"
+            >
+
+        </ListView>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/adds_key"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/generate_report"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttondesign"
+                android:textColor="#ffffff"
+                android:text="@string/Generate_Report">
+            </Button>
+            <Button
+                android:id="@+id/new_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/buttondesign"
+                android:textColor="#ffffff"
+                android:text="@string/Assign_New_Task">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

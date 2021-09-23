@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42b6ff</color>
+    <color name="colorPrimaryDark">#346AE6</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="blue">#346AE6</color>
+    <color name="seagreen">#3CDDB1</color>
+    <color name="grey">#8B8B8B</color>
+    <color name="green">#71E21B</color>
+    <color name="black">#000000</color>
+    <color name="red">#E21B39</color>
+    <color name="purple">#892FE3</color>
+    <color name="orange">#FF9800</color>
+    <color name="greylight">#DFDFDF</color>
+    <color name="darkorange">#FF5A1C</color>
+    <color name="lightorange">#FF9008</color>
+    <color name="lightpurple">#9828B2</color>
+    <color name="darkpurple">#6B39B2</color>
+    <color name="gray_400">#EEEEEE</color>
+    <color name="gray_100">#f5f5f5</color>
+    <color name="gray_600">#e3e3e3</color>
+    <color name="white">#ffffff</color>
+    <color name="greendark">#00600f</color>
+    <color name="skyblue">#42b6ff</color>
+    <color name="gray_hint">#8f8f8f</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+
+
+</resources>

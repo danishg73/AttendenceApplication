@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sahm.attendanceapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newappicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/newappicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sahm.attendanceapp.pdf_report"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.sahm.attendanceapp.officeloc_employee"
+            android:label="@string/title_activity_officeloc_employee" />
+        <activity
+            android:name="com.sahm.attendanceapp.office_location"
+            android:label="@string/title_activity_office_location" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name="com.sahm.attendanceapp.Manager_Dashboard"
+            android:excludeFromRecents="true"
+            android:label="@string/Manager_Dasboard"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="Attendance" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sahm.attendanceapp.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sahm.attendanceapp.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <service
+            android:name="com.sahm.attendanceapp.Tracking_service"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.sahm.attendanceapp.attendanceCheck_service"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.sahm.attendanceapp.Employee_Dashboard"
+            android:label="@string/Employee_DashBoard"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.sahm.attendanceapp.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.sahm.attendanceapp.Messenger"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sahm.attendanceapp.task_view"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="Assigment_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.sahm.attendanceapp.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="com.sahm.attendanceapp.Employee_reportview" />
+        <activity android:name="com.sahm.attendanceapp.Userlist_message" />
+        <activity android:name="com.sahm.attendanceapp.Edit_info" />
+        <activity android:name="com.sahm.attendanceapp.change_password" />
+        <activity android:name="com.sahm.attendanceapp.Register_manager" />
+        <activity android:name="com.sahm.attendanceapp.Login_Employee" />
+        <activity android:name="com.sahm.attendanceapp.Inapp_purchase" />
+        <activity android:name="com.sahm.attendanceapp.salary_calculate" />
+        <activity android:name="com.sahm.attendanceapp.Employee_task" />
+        <activity android:name="com.sahm.attendanceapp.Login_manager" />
+        <activity android:name="com.sahm.attendanceapp.Work_report" />
+        <activity android:name="com.sahm.attendanceapp.Task_complete_employee" />
+        <activity android:name="com.sahm.attendanceapp.WorkAssign" />
+        <activity android:name="com.sahm.attendanceapp.SettingsActivity" />
+        <activity android:name="com.sahm.attendanceapp.LoginDashboardActivity" />
+        <activity android:name="com.sahm.attendanceapp.Currency" />
+        <activity android:name="com.sahm.attendanceapp.EmployeeProfileActivity" />
+        <activity android:name="com.sahm.attendanceapp.WorkTimingsActivity" />
+        <activity android:name="com.sahm.attendanceapp.HolidaysActivity" />
+    </application>
+
+</manifest>

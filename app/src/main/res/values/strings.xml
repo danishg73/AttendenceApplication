@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name" translatable="false">SAHM TIME</string>
+
+    <string-array name="years">
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+    </string-array>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_username_hint">Username</string>
+    <string name="Enter_Mobile_Number">Enter Mobile Number</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="Employee_DashBoard">Employee DashBoard</string>
+    <string name="Profile">Profile</string>
+    <string name="Work_Timings">Work Timings</string>
+    <string name="Timings">Timings</string>
+    <string name="Attendance">Attendance</string>
+    <string name="Submit_work_report">Submit Work Report</string>
+    <string name="csv_report">CSV Report</string>
+    <string name="pdf_report">Pdf Report</string>
+    <string name="Holidays">Holidays</string>
+    <string name="Holiday">Holiday:</string>
+    <string name="Currency">Currency</string>
+    <string name="Packages">Packages</string>
+    <string name="Subcribe">Subcribe</string>
+    <string name="Premium">Premium</string>
+    <string name="Basic">Basic</string>
+    <string name="Price">-Price: </string>
+    <string name="Feature">-Feature: </string>
+    <string name="Whole_month_without">Whole Month without Adds</string>
+    <string name="Whole_Year_without">Whole Year without Adds</string>
+    <string name="Validity">-Validity: </string>
+    <string name="month">30 Days</string>
+    <string name="Year">356 Days / 1 Year</string>
+    <string name="Setting">Setting</string>
+    <string name="Share">Share</string>
+    <string name="Logout">Logout</string>
+    <string name="Assigment">Assigment</string>
+    <string name="Project">Project</string>
+    <string name="Shift_Name">Shift Name</string>
+    <string name="Work_Time">Work Time</string>
+    <string name="Select_Start_Time">Select Start Time</string>
+    <string name="Select_End_Time">Select End Time</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Create_Shift">Create Shift</string>
+    <string name="Days">Days</string>
+    <string name="Monday">Mon</string>
+    <string name="Month">Month</string>
+    <string name="Tuesday">Tues</string>
+    <string name="Wedneday">Wed</string>
+    <string name="Thursday">Thur</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+    <string name="Name">Name</string>
+    <string name="Shift">Shift</string>
+    <string name="Punch">Punch</string>
+    <string name="Create_Employee">Create Employee</string>
+    <string name="User_name">Username</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="Select_Shift">Select Shift :</string>
+    <string name="Salary">Salary :</string>
+    <string name="salary">Salary</string>
+    <string name="Contact_Number">Contact Number</string>
+    <string name="Password">Password</string>
+    <string name="Add_Employee">Add Employee</string>
+    <string name="Register">Register</string>
+    <string name="Un_punched">Un punched</string>
+    <string name="Today_is_not_your_shift_day">Today is not your shift day</string>
+    <string name="No_Marked_Attendance_found">No Marked Attendance found</string>
+    <string name="Tracking_Stopped">Tracking Stopped</string>
+    <string name="No_Employee_Found">No Employee Found</string>
+    <string name="No_Shifts_Found">No Shifts Found</string>
+    <string name="Employee_profile">Employee Profile</string>
+    <string name="Call">Call</string>
+    <string name="Direct_Msg">Direct Msg</string>
+    <string name="SMS">SMS</string>
+    <string name="Whatsapp">Whatsapp</string>
+    <string name="Track">Track</string>
+    <string name="Show_Task">Show Task</string>
+    <string name="Show_Reports">Show Reports</string>
+    <string name="User_Status">User Status</string>
+    <string name="Active">Active</string>
+    <string name="Employee_is_not_present">Employee is not present</string>
+    <string name="Tracking...">Tracking...</string>
+    <string name="Create_work_timings_first">Create work timings first</string>
+    <string name="All_Employees">All Employees</string>
+    <string name="Messages">Messages</string>
+    <string name="Punched">Punched</string>
+    <string name="Not_Punched">Not Punched</string>
+    <string name="Manager_Dasboard">Manager Dashboard</string>
+    <string name="ADD_HOLIDAY">ADD HOLIDAY</string>
+    <string name="Holiday_Name">Holiday Name</string>
+    <string name="Submit">Submit</string>
+    <string name="Select_Date">Select Date</string>
+    <string name="Kindly_select_holiday_date">Kindly select holiday date</string>
+    <string name="All_fields_are_required">All fields are required</string>
+    <string name="Holiday_Added">Holiday Added</string>
+    <string name="Do_you_want_to_unpunch">Do you want to unpunch?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="This_date_is_already_exist">This date is already exist</string>
+    <string name="Processing">Processing...</string>
+    <string name="Error">Error</string>
+    <string name="Today_is_your_holiday_do_you_really_want_to_punch">Today is your holiday! Do you really want to punch?</string>
+    <string name="Total_Duty_Time">Total Duty Time = </string>
+    <string name="Time_Added">Time Added</string>
+    <string name="Pay_roll">Pay roll</string>
+    <string name="Office_location">Office Location</string>
+    <string name="Add_Location">Add Location</string>
+    <string name="Location_Added">Location Added</string>
+    <string name="Updated">Updated</string>
+    <string name="Unpunch">Unpunch</string>
+    <string name="Last">Last</string>
+    <string name="Date">Date</string>
+    <string name="Punch_In">Punch In</string>
+    <string name="Punch_Out">Punch out</string>
+    <string name="Total_Time">Total Time</string>
+    <string name="Earning">Earning</string>
+    <string name="Siging_In">Signing in</string>
+    <string name="register">REGISTER</string>
+    <string name="Total">Total</string>
+    <string name="EmployeeTask">Employee Task</string>
+    <string name="Pending">Pending</string>
+    <string name="Ok">OK</string>
+    <string name="Low_gps_Signals">Cant able to track Employee. Low Gps Signals of Employee</string>
+    <string name="Assign_New_Task">Assign New Task</string>
+    <string name="Completed">Completed</string>
+    <string name="Share_file_with">Share file with</string>
+    <string name="NO_data_found">No Data Found</string>
+    <string name="Generate_Report">Generate Report</string>
+    <string name="File_Created">File Created</string>
+    <string name="Saved_in_InternalStorage">Saved in InternalStorage/Sahm, Do you want to share?</string>
+    <string name="Employee_Reports">Employee Reports</string>
+
+
+
+
+
+
+
+
+
+
+
+        <string name="Database_error">Database error: </string>
+        <string name="Assigned_By">Assigned By:</string>
+        <string name="Expiray_Date">Expiray Date:</string>
+        <string name="Title">Title:</string>
+        <string name="Select">Select</string>
+        <string name="Attachments">Attachments:</string>
+        <string name="Submitted_On_">Submitted On:</string>
+        <string name="Period">Period:</string>
+        <string name="Description_">Description:</string>
+        <string name="ADD_WORK_TIMINGS">ADD WORK TIMINGS</string>
+        <string name="Report_of">Report of</string>
+        <string name="Work_Report">Work Report</string>
+        <string name="Work_Details">Work Details</string>
+        <string name="Attach_File">Attach File</string>
+        <string name="Time_Alot">Time Alot</string>
+        <string name="Description">Description</string>
+        <string name="Assign_Work">Assign Work</string>
+        <string name="My_Task">My Task</string>
+        <string name="Select_file">Select File</string>
+        <string name="Attach_file">Attach File</string>
+        <string name="Submit_Description">Submit Description</string>
+        <string name="Task_Name">Task Name</string>
+        <string name="Submit_your_work">Submit Your Work</string>
+        <string name="Login">Login</string>
+        <string name="Change_Password">Change Password</string>
+        <string name="Employee">Employee</string>
+        <string name="Use_this_option_employees">Use this option if you want to punch or make attendance as an employees</string>
+        <string name="Manager">Manager</string>
+        <string name="Unmarking">Unmarking</string>
+        <string name="Use_this_option_if_you_want">Use this option if you want to capture  attendance of other employee</string>
+        <string name="Select_Your_Role">Select Your Role</string>
+        <string name="Start_New_Message">Start New Message</string>
+        <string name="did_not_punch_in_yet"> did not punch in yet, his/her Punch-In time was </string>
+        <string name="Attendance_not_marked">Attendance not marked</string>
+        <string name="Alert_Start_Failed">Alert start failed</string>
+        <string name="Tracking_failed">Tracking failed</string>
+        <string name="Attendance_Marked">Attendance Marked</string>
+        <string name="Punching">Punching...</string>
+        <string name="Loading">Loading</string>
+        <string name="Cannot_able_to_read">Cannot able to read pdf file</string>
+        <string name="saved_in_InternalStorage">saved in InternalStorage/Sahm, Do you want to share?</string>
+        <string name="File_saved">File Saved</string>
+        <string name="No_Task_found">Not Task Found</string>
+        <string name="Select_picture">Select Picture</string>
+        <string name="Whatsapp_not">Whatsapp not installed</string>
+        <string name="Share_with">Share With</string>
+        <string name="Holiday_Deleted">Holiday Deleted</string>
+        <string name="Task">Task</string>
+        <string name="Pdf_Report">Pdf Report</string>
+        <string name="Message">Message</string>
+        <string name="Wrong_Credentials">Wrong Credentials</string>
+        <string name="Account_doesnot_exist">Account doesnot exist</string>
+        <string name="Employee_are_not_allowed">Employees are not allowed to login from here</string>
+        <string name="Managers_are_not_allowed">Managers are not allowed to login from here</string>
+        <string name="Free_user">Your are Free User</string>
+        <string name="please_grant_location">Please grant the location permission</string>
+        <string name="Employee_Added">Employee Added</string>
+        <string name="Username_already">Username Already Exist</string>
+        <string name="Registring_Employee">Registering Employee</string>
+        <string name="didnot_completed_his_task"> didnot completed his/her task, Expiray date: </string>
+        <string name="Task_Not_Completed">Task Not Completed</string>
+        <string name="Attendance_App">Attendance App</string>
+        <string name="Please_enter_some_text">Please enter some text</string>
+        <string name="Wrong_Email_Pattren">Wrong Email Pattren</string>
+        <string name="Register_Successfully">Register Successfully</string>
+        <string name="Creating_Your_Account">Creating Your Account</string>
+        <string name="Are_you_sure_you_want_to_exit_app">Are you sure you want to exit app</string>
+        <string name="Downloading">Downloading</string>
+        <string name="Permission_Required">Permission Required</string>
+        <string name="Work_Submitted">Work Submitted</string>
+        <string name="Select_Report_Period">Select Report Period</string>
+        <string name="Task_Assigned">Task Assigned</string>
+        <string name="Task_Not_Assigned">Task Not Assigned</string>
+        <string name="Permission_Not_Granted">Permission Not Granted!</string>
+        <string name="Uploading_Failed">Uploading Failed</string>
+        <string name="Uploading_File">Uploading File ...</string>
+        <string name="Please_wait">Please wait</string>
+
+    <string name="Old_Password">Old Password</string>
+        <string name="New_Password">New Password</string>
+        <string name="Confirm_Password">Confirm Password</string>
+        <string name="New_password_are_not_same">New password are not same</string>
+        <string name="password_has_been_changed_sucessfully">password has been changed sucessfully</string>
+        <string name="Wrong_old_Password">Wrong old Password</string>
+        <string name="Language">Language</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="Fetching_Data">Fetching Data...</string>
+    <string name="title_activity_office_location" translatable="false">Map</string>
+
+
+    <string name="firebase_notification_key" translatable="false">AAAA6f0HMNg:APA91bFdYWHj6IemP5ZqmX3V6irrhL_YOOx1RD_jUVPOQ9exjFfM0ZajH5IoEGrsCEKwuF6l5dSfWLAmnZTq1MyRr6bl2y9ydb49UPQNcpcs5aN1wBlrDnTz0BecsjOdGZgOloZkvab_</string>
+    <string name="adds_key" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_full_screen" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="title_activity_officeloc_employee">Map</string>
+    <string name="Manager_didnt_insert">Manager didn\'t insert his office location yet</string>
+    <string name="submittted_his_task">submitted his/her Task:</string>
+    <string name="Your_manager">Your Manager \'</string>
+    <string name="assigned_you_a_task">\' assigned you a task, due date is:</string>
+    <string name="Edit_Info">Edit info</string>
+    <string name="Phone">Phone</string>
+    <string name="Update">Update</string>
+    <string name="Edit_Salary">Edit Salary</string>
+    <string name="Edit_Shift">Edit Shift</string>
+    <string name="Show_Date">Show Date:</string>
+    <string name="Period_">Period</string>
+    <string name="Email">Email</string>
+    <string name="unmarking">unmarking...</string>
+    <string name="unmarked_his_Attendance_at">" unmarked his Attendance at: "</string>
+    <string name="marked_his_Attendance_at">marked his Attendance at:</string>
+</resources>

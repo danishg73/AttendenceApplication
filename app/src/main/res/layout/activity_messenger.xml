@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Messenger">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#2eafff">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/backarrow"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:text="Osama Ehsan"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"/>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingStart="10dp"
+               android:paddingEnd="10dp"
+               android:paddingBottom="6dp"
+               android:paddingTop="6dp"
+               android:hint="@string/Start_New_Message"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:background="@drawable/edittext_round"
+               android:layout_weight="1"
+               android:id="@+id/input">
+           </EditText>
+           <Button
+               android:id="@+id/send"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_width="37dp"
+
+               android:layout_marginBottom="6dp"
+               android:layout_height="40dp"
+               android:background="@drawable/send"
+               >
+
+           </Button>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

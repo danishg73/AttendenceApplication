@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/message_item_receive">
+        <TextView
+            android:id="@+id/textmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="This is messasjksasadksjdkklsajdkjsakdjlksajdlkjaslasdjldlaksdjljasdksadlkkjhkjhhjkhkhkjhkjhk-ge">
+
+        </TextView>
+        <TextView
+            android:id="@+id/texttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:textColor="#4f4f4f"
+            android:text="12:45am">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
