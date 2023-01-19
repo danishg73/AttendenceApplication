@@ -1,7 +1,7 @@
 # AttendenceApplication
-DataBase: FireBase Realtime Databasae
-Employee/Manager 
-Salary Calcultion
-Attendance Marking
-Task Assigning
-Report Generating
+DataBase: FireBase Realtime Databasae<br />
+Employee/Manager <br />
+Salary Calcultion<br />
+Attendance Marking<br />
+Task Assigning<br />
+Report Generating<br />
